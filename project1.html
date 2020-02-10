@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Predicting Hit Songs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+    <link rel="stylesheet" href="style.css" />
+<style>
+    div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    }
+
+    div.gallery:hover {
+    border: 1px solid #777;
+    }
+
+    div.gallery img {
+    width: 100%;
+    height: auto;
+    }
+
+    div.desc {
+    padding: 15px;
+    text-align: center;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#Introduction">Introduction</a>
+                </li>
+                <li>
+                    <a href="#Slides">Slides</a>
+                </li>
+                <li>
+                    <a href="#Report">Report</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="Introduction">
+            <h1><b> Predicting Hit Songs </b></h1>   
+            <p>This is the introdution for our machine learning course's final project.</p>   
+            <div>
+                Exploring the possibility of predicting hit songs is both interesting from a scientific point
+                of view and something that could be beneficial to the music industry. In this research we raise
+                the question if it is possible to classify a music track as a hit or a non-hit based on its audio and
+                artist features. By training classifiers on the different features, we hope to find patterns in the
+                data that will hopefully tell us which features are appealing to people and will result in a song
+                becoming popular, or “hit”. We investigated which machine learning algorithms could be suited
+                for a task like this. Four different models were built using various algorithms, including K
+                Nearest Neighbors, Support Vector Machines, Naive Bayes, as well as Logistic Regression. The
+                obtained results do not indicate that it is possible to predict hit songs on our particular dataset.
+                (Testing on the full imbalanced data gives us worse results than the resampled data did). The fact
+                that we predict most of the songs as hit songs results in a high recall, and precision becomes very
+                low because of it. Also, we do not get a conclusion of what the most relevant features are
+                because they vary from model to model.)
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </section>
+
+        <section id="Slides">
+            <h1>Slides</h1>
+            <div>
+                <a href="files/ML Group Presentation.pdf" target="_blank"><strong>PPT</strong><br></a>
+                <img src="files/P1.jpeg" width="240" height="200">
+                <img src="files/P2.jpeg" width="240" height="200">
+                <img src="files/P3.jpeg" width="240" height="200">
+            </div><br>
+        </section>
+        <section id="Report">
+            <h1>Report</h1>
+            <div>
+                <a href="files/ML Report.pdf" target="_blank"><strong>Report</strong><br></a>
+            </div><br>
+        </section>
+        <footer>Copyright © Zheng Zhou
+
+        </footer>
+    </div>
+
+</body>
+</html>

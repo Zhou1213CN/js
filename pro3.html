@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fault-tolerant top-k algorithm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+    <link rel="stylesheet" href="style.css" />
+<style>
+    div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    }
+
+    div.gallery:hover {
+    border: 1px solid #777;
+    }
+
+    div.gallery img {
+    width: 100%;
+    height: auto;
+    }
+
+    div.desc {
+    padding: 15px;
+    text-align: center;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#Introduction">Introduction</a>
+                </li>
+                <li>
+                    <a href="#Slides">Slides</a>
+                </li>
+                <li>
+                    <a href="#Paper">Paper</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="Introduction">
+            <h1><b> Fault-tolerant top-k algorithm</b></h1>   
+            <p>This is the introdution for my research project with Professor Tseng.</p>   
+            <div>
+                Top-k queries have wide applications in a big data setting.
+One of the simplest and easy-to-grasp application is election
+which precisely capture the notion of “global” and “local”
+counts of votes. In a large-scale election, each ballot box has
+a local count of votes for each candidate (or item); however,
+what we really care about is the global counts of votes, i.e.,
+the aggregation of all the local votes. More precisely, a top-k
+query should find the answer to the following question:
+Which are the k globally most popular candidates?
+This has many natural applications in large-scale big data
+systems. Due to its wide applications, efficient Top-k
+mechanisms have been a hot research topic.In this paper, we first formally analyze the Lottery Algorithm
+in [6], and address the two limitations by proposing
+a modular algorithm. The first stage of the algorithm selects
+a constant number of “popular” items in a similar fashion
+of the Lottery Algorithm [6], and the second stage uses a
+modular approach to output the Top-k items from the popular
+items selected in the first stage. One salient feature of the
+modular approach is that depending on the characteristics of
+the data, we can plug in different existing Top-k algorithms
+into the second stage to produce the output to obtain better
+approximation bound. This is particularly beneficial if we have
+some prior knowledge on the characteristics of the data, e.g.,
+distribution of local counts of votes or communication graph.
+Our approximate algorithm is also lightweight, works in sparse
+networks and has better approximation bound.
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </section>
+
+        <section id="Slides">
+            <h1>Slides</h1>
+            <div>
+                <a href="files/APPT.pdf" target="_blank"><strong>Slides</strong><br></a>
+                <img src="files/A2.jpeg" width="240" height="200">
+                <img src="files/A3.jpeg" width="240" height="200">
+            </div><br>
+        </section>
+        <section id="Paper">
+            <h1>Paper</h1>
+            <div>
+                <a href="files/Topk.pdf" target="_blank"><strong>Paper</strong><br></a>
+                <img src="files/A4.jpeg" width="300" height="400">
+            </div><br>
+        </section>
+        <footer>Copyright © Zheng Zhou
+
+        </footer>
+    </div>
+
+</body>
+</html>

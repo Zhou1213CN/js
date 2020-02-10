@@ -1,0 +1,89 @@
+{
+    "about":{
+    "name":"Zheng Zhou",
+     "title":"Student @ Boston College",
+     "photo":"files/photo1.jpeg",
+     "desc":"Zheng Zhou is a junior student with Computer Science and Mathematics majors at BC. I was born in 1999. I come from Nanjing, China. I transfered from Oberlin College, and my major used to be Economics. I am interested in machine learning, algorithms, and web application. I am planning to apply Graduates programs. I love watching movies and listening to music. I am a gentle and easy-going person.",
+     "email": "zhoupt@bc.edu",
+     "address": "276 Chestnut Hill Ave, Brighton, MA 02135",
+     "resume":"files/ResumeOct2.pdf",
+     "github":"https://github.com/Zhou1213CN"
+    },
+    "news":[
+        {
+            "title":"Taking a web programming course",
+            "date":"Jan 13, 2020"
+        },
+        {
+            "title":"Traveling to Miami, USA",
+            "date":"Jan 1, 2020"
+        },
+        {
+            "title":"Traveling to Montreal, CAN",
+            "date":"Nov 28, 2020"
+        },
+        {
+            "title":"Performing Fan Dance at JCBC Culture Show",
+            "date":"Nov 16, 2019"
+        }
+    ],
+    "projects":[
+        {
+            "id":"project1",
+            "title":"Predicting Hit Songs",
+            "authors":"Henry Chen, Cecilia Wu, Yiyuan Xu, Timothy Yang, Zheng Zhou",
+            "source":"MachineLearning",
+            "teaser": "files/ML1.png",
+            "tags":["Music","MachineLearning"],
+            "materials":[
+                {
+                    "label":"PPT",
+                    "path":"files/ML Group Presentation.pdf"
+                },
+                {
+                    "label":"Report",
+                    "path":"files/ML Report.pdf"
+                }
+            ],
+            "desc":"In this research we raise the question if it is possible to classify a music track as a hit or a non-hit based on its audio and artist features. By training classifiers on the different features, we hope to find patterns in the data that will hopefully tell us which features are appealing to people and will result in a song becoming popular, or “hit”. We investigated which machine learning algorithms could be suited for a task like this. Four different models were built using various algorithms, including K Nearest Neighbors, Support Vector Machines, Naive Bayes, as well as Logistic Regression. The obtained results do not indicate that it is possible to predict hit songs on our particular dataset. (Testing on the full imbalanced data gives us worse results than the resampled data did). The fact that we predict most of the songs as hit songs results in a high recall, and precision becomes very low because of it. Also, we do not get a conclusion of what the most relevant features are because they vary from model to model.)"
+        },
+        {
+            "id":"project2",
+            "title":"Shell Program",
+            "authors":"Zheng Zhou",
+            "source":"OperatingSystem",
+            "teaser": "files/O1.jpeg",
+            "tags":["Code","System"],
+            "materials":[
+                {
+                    "label":"Code",
+                    "path":"files/shell.c"
+                },
+                {
+                    "label":"Report",
+                    "path":"files/OS Report.pdf"
+                }
+            ],
+            "desc":"The goal of this project is implementing a shell program, that is, a program that repeatedly reads commands from the user, interprets them, and translates them into a sequence of actions that likely involve an interaction with the operating system through system calls. Basic features include cd,ls, background symbol, word count, and redirection."
+        },
+        {
+            "id":"project3",
+            "title":"Fault-tolerant Top-k algorithms",
+            "authors":"Ruifan Yang, Lewis Tseng, Zheng Zhou",
+            "source":"Research",
+            "teaser": "files/A1.jpeg",
+            "tags":["Paper","Algorithms"],
+            "materials":[
+                {
+                    "label":"Slides",
+                    "path":"files/APPT.pdf"
+                },
+                {
+                    "label":"Paper",
+                    "path":"files/Topk.pdf"
+                }
+            ],
+            "desc":" Top-k queries have wide applications in a big data setting. One of the simplest and easy-to-grasp application is election which precisely capture the notion of “global” and “local” counts of votes. In a large-scale election, each ballot box has a local count of votes for each candidate (or item); however, what we really care about is the global counts of votes, i.e., the aggregation of all the local votes. More precisely, a top-k query should find the answer to the following question: Which are the k globally most popular candidates? This has many natural applications in large-scale big data systems. Due to its wide applications, efficient Top-k mechanisms have been a hot research topic.In this paper, we first formally analyze the Lottery Algorithm in [6], and address the two limitations by proposing a modular algorithm. The first stage of the algorithm selects a constant number of “popular” items in a similar fashion of the Lottery Algorithm [6], and the second stage uses a modular approach to output the Top-k items from the popular items selected in the first stage. One salient feature of the modular approach is that depending on the characteristics of the data, we can plug in different existing Top-k algorithms into the second stage to produce the output to obtain better approximation bound. This is particularly beneficial if we have some prior knowledge on the characteristics of the data, e.g., distribution of local counts of votes or communication graph. Our approximate algorithm is also lightweight, works in sparse networks and has better approximation bound."
+        }
+    ]
+}

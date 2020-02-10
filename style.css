@@ -1,0 +1,224 @@
+.center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.container{
+  max-width:1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20 px 20 px 20 px 20 px;
+  box-sizing: border-box;
+  position: static;
+}
+ 
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about .col-1:nth-child(1){
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+#project .col-1:nth-child(1){
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+}
+
+
+.col-2 {flex-basis: 33.33%;}
+.col-3 {flex-basis: 66.66%;}
+.col-4 {flex-basis: 20%;}
+.col-5 {flex-basis: 80%;}
+
+section{
+  margin: 1rem 0 1rem 0;
+}
+
+
+section .title{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.profileimage{
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  object-fit:cover;
+
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    
+}
+
+nav ul {
+  list-style-type: None;
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  justify-content:center;
+  background-color:white;
+  position:fixed;
+  top: 0;
+  left: 0;
+}
+
+div.gallery {
+  display: flex;	
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  align-items: center;
+  
+  
+  }
+
+  div.gallery:hover {
+  border: 1px solid #777;
+  }
+
+  div.gallery img {
+  width: 100%;
+  height: auto;
+  position: static;
+  }
+
+
+
+
+.row{
+  display: flex;
+  width: 100%	
+}
+
+.column {
+  display: flex;
+  flex-basis: 100%;
+  flex: 5;
+}
+
+h1 {
+    font-family: "Sans-serif", Sans, serif;
+    color:black;
+    text-align: center;
+  }
+  
+h2 {
+    font-family: "Sans-serif", Sans, serif;
+    color:pink;
+    text-align: center;
+  }
+
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+a:link {
+    color: #d4646a;
+  }
+  
+  a:visited {
+    color: #6597e6;
+    text-decoration: line-through;
+  }
+  
+  a:hover {
+    color: #FF00FF;
+  }
+  
+  a:active {
+    color: pink;
+  }
+
+li a {
+    margin-right:5rem;
+}
+
+.tag{
+  display: inline-block;
+  border-radius: 2px;
+  margin: 5px 5px 5px 0px;
+  padding: 2px 4px 2px 4px;
+  background: #eeeeee;
+}
+.tag:last-child{
+  margin: 5px 0px 5px 0px;
+}
+.Report{
+  background-color: #FFCDD2;
+  color: #B71C1C;
+}
+.MachineLearning{
+  background-color: #C8E6C9;
+  color: #1B5E20;
+}
+.code{
+  background-color: #D1C4E9;
+  color: #311B92;
+}
+.Algorithms{
+  background-color: #B2EBF2;
+  color: #1fb6bb;
+}
+.Paper{
+  background-color: #FFE0B2;
+  color: rgb(214, 144, 39);
+}
+
+.System{
+  background-color: #cc43a3;
+  color: #FFC0CB;
+}
+
+.project-materials{
+  margin: 0.5rem 0 0.5rem 0;
+}
+.project-materials span{
+  margin: 0 0.5rem 0 0 
+}
+
+.project-teaser{
+  width: 100%;
+}
+
+footer{
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {flex-basis: 50%;}
+  .col-2 {flex-basis: 33.33%;}
+  .col-3 {flex-basis: 66.66%;}
+  .col-4 {flex-basis: 20%;}
+  .col-5 {flex-basis: 80%;}
+  
+
+  #news .col-2 {
+      text-align: right;
+  }
+}
+
+.search input {
+	width:100%;
+  margin:0.5rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid #eeeeee;
+}
